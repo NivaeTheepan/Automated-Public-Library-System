@@ -2,6 +2,8 @@
 An automated, cloud-enabled public library management system built with React, FastAPI, and MongoDB. This project enhances efficiency, scalability, and user experience by integrating secure authentication, digital inventory management, personalized recommendations, notifications, and an admin control panel.
 
 
+
+
 <p align="left"> <b>📌 Project Overview</b> </p>
 Traditional public libraries often face challenges with manual processes, limited accessibility, inconsistent inventory tracking, and a lack of personalized services. This project addresses those gaps by building a modern Automated Library System that:
 
