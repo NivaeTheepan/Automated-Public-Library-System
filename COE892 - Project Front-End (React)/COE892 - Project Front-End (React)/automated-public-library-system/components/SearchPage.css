@@ -1,0 +1,219 @@
+body {
+    font-family: 'Verdana', Verdana, monospace;
+    color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    background-image: url(resources/image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.search-container {
+    text-align: center;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px 50px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.search-box {
+    width: 60%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+}
+
+.search-results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.table-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 10;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    word-wrap: break-word;
+}
+
+/* Adjusted column widths */
+th:nth-child(1), td:nth-child(1) { width: 20%; } /* Title */
+th:nth-child(2), td:nth-child(2) { width: 15%; } /* Image */
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* Author */
+th:nth-child(4), td:nth-child(4) { width: 12%; } /* Genre */
+th:nth-child(5), td:nth-child(5) { width: 15%; } /* Rating */
+th:nth-child(6), td:nth-child(6) { width: 18%; } /* Description */
+th:nth-child(7), td:nth-child(7) { width: 15%; }  /* Borrow */
+
+td img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.description-cell {
+    max-width: 100%;
+    min-width: 150px;
+}
+
+.description-content {
+    white-space: normal;
+    word-wrap: break-word;
+    max-height: 100px;
+    overflow-y: auto;
+    display: block;
+    line-height: 1.4;
+}
+
+.rating-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    min-width: 120px;
+}
+
+.star {
+    color: gold;
+    font-size: 18px;
+}
+
+.rating-value {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: whitesmoke;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ff6961;
+}
+
+.message {
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background: #45a049;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.borrowed-label {
+    color: #ff6961;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.borrowed-status {
+    color: #ff6961;
+    font-weight: bold;
+}
+
+.available-status {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

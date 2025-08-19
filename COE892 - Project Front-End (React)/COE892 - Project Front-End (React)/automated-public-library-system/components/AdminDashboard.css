@@ -1,0 +1,140 @@
+body {
+    font-family: 'Verdana', Verdana, monospace;
+    color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    background-image: url(resources/image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.admin-container {
+    text-align: center;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px 50px;
+    width: 90%;
+    max-width: 1200px;
+    background: transparent;
+}
+
+.user-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.user-details {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.borrowed-books {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.borrowed-books th {
+    background-color: #444;
+}
+
+.borrowed-books td img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    background: whitesmoke;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ff6961;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background: #45a049;
+  }
+
+  .signout-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .signout-button:hover {
+    background: #d32f2f;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }

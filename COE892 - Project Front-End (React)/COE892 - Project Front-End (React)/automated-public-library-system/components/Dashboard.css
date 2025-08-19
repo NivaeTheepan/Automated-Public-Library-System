@@ -1,0 +1,185 @@
+body {
+    font-family: 'Verdana', Verdana, monospace;
+    color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    background-image: url(resources/image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard-container {
+    text-align: center;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px 50px;
+    width: 90%;
+    max-width: 1200px;
+    background: transparent;
+}
+
+.dashboard-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.book-list {
+    flex: 2;
+    text-align: center;
+}
+
+.recommendations, .due-dates {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.recommendations h3, .due-dates h3 {
+    font-size: 22px;
+}
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.due-dates ul {
+    list-style: none;
+    padding: 0;
+    color:#791f1f
+}
+
+.recommendations li, .due-dates li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+td img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+th {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+button {
+    background: whitesmoke;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background: #45a049;
+  }
+
+  .recommendations li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .recommendations li strong {
+    color: #4CAF50;
+    font-size: 1.1em;
+  }
+  
+  .recommendations li span {
+    font-size: 0.9em;
+    color: #ddd;
+    display: block;
+    margin-top: 5px;
+  }
+
+.book-list table img {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+  
+  .book-list table img[src=""] {
+    opacity: 0;
+  }
+  
+  .book-list table {
+    table-layout: fixed; /* Prevent table resizing during image load */
+  }
+  
+  .book-list td {
+    vertical-align: middle; /* Center content vertically */
+  }
+
+  .dashboard-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .signout-button {
+    background: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .signout-button:hover {
+    background: #d32f2f;
+  }
