@@ -13,8 +13,8 @@ Traditional public libraries often face challenges with manual processes, limite
 
 
 
-<p align="left"> <b>🚀 Features</b> </p>
-👤 User Features
+
+<p align="left"> <b>👤 User Features</b> </p>
 
 - Register/Login with secure JWT-based authentication
 - Search & Borrow books from the digital catalogue
@@ -25,7 +25,8 @@ Traditional public libraries often face challenges with manual processes, limite
 - Reservation availability
 - Personalized Recommendations based on borrowing history and ratings
 
-🛠️ Admin Features
+
+<p align="left"> <b>🛠️ Admin Features</b> </p>
 
 - Admin Dashboard for library staff
 - Manage books, users, and reservations
